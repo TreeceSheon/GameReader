@@ -43,6 +43,7 @@ public class GameReader {
         getInformation(reader);
         //set board size
         PacmanBoard board = setBoardDimension();
+        //extract trivial attributes from gameInformation
         String[] trivialInformation = setTrivial();
         //set the hunter
         var temp = gameInformation.get(5).split("=")[1];
